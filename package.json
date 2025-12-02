@@ -1,0 +1,29 @@
+{
+  "name": "edulearn-landing",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix ./landingpage run dev",
+    "build": "npm --prefix ./landingpage run build",
+    "preview": "npm --prefix ./landingpage run preview"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "clsx": "^2.1.1",
+    "framer-motion": "^10.18.0",
+    "lucide-react": "^0.555.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.9.6",
+    "simplex-noise": "^4.0.3",
+    "tailwind-merge": "^3.4.0",
+    "three": "^0.181.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.23",
+    "stylelint-config-tailwindcss": "^1.0.0",
+    "tailwindcss": "^3.4.7",
+    "vite": "^7.2.6"
+  }
+}
