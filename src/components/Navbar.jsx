@@ -10,8 +10,9 @@ export const Navbar = () => {
     { name: "Home", href: "#home" },
     { name: "Courses", href: "#courses" },
     { name: "How it Works", href: "#how-it-works" },
-    { name: "About", href: "#about" },
     { name: "Pricing", href: "#pricing" },
+    { name: "About", href: "#about" },
+
   ];
 
   // 2. Smooth Scroll Handler

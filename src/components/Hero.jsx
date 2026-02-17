@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CountUp from "./Countup";
 import FloatingLines from "./FloatingLines";
 
@@ -9,16 +10,16 @@ const Hero = () => {
       {/* --- 1. BACKGROUND: Floating Lines (Customized) --- */}
       <div className="absolute inset-0 z-0">
         <FloatingLines 
-          // Settings from Screenshot
-          enabledWaves={['top', 'middle', 'bottom']}
-          lineCount={5}
-          lineDistance={12}
-          bendRadius={5}
-          bendStrength={-0.5}
-          
-          // Aesthetic tweaks
-          animationSpeed={0.4} 
-          linesGradient={["#4f46e5", "#8b5cf6", "#ec4899"]} // Nice purple-pink gradient
+        // Settings from Screenshot
+        enabledWaves={['top', 'middle', 'bottom']}
+        lineCount={5}
+        lineDistance={12}
+        bendRadius={5}
+        bendStrength={-0.5}
+        
+        // Aesthetic tweaks
+        animationSpeed={0.4} 
+        linesGradient={["#4f46e5", "#8b5cf6", "#ec4899"]} // Nice purple-pink gradient
         />
         
         {/* Gradient Overlay for text readability */}
@@ -37,15 +38,18 @@ const Hero = () => {
           for recognized degrees.
         </p>
 
-        <button className="mt-12 rounded-full bg-gradient-to-r from-[#7c3aed] to-[#4f46e5] px-10 py-3 text-sm font-medium text-white transition-transform hover:scale-105 hover:shadow-[0_0_20px_rgba(124,58,237,0.4)]">
+        <Link 
+          to="/signup"
+          className="mt-12 rounded-full bg-gradient-to-r from-[#7c3aed] to-[#4f46e5] px-10 py-3 text-sm font-medium text-white transition-transform hover:scale-105 hover:shadow-[0_0_20px_rgba(124,58,237,0.4)] inline-block"
+        >
           Get started
-        </button>
+        </Link>
       </div>
 
       {/* --- 3. Stats Bar --- */}
       <div className="z-10 mt-32 w-full max-w-6xl animate-fade-in-up">
         <div className="grid grid-cols-2 gap-8 rounded-2xl bg-transparent px-12 py-8 md:grid-cols-4">
-          <div className="text-center">
+        <div className="text-center">
             <h3 className="text-4xl font-bold text-white"><CountUp end={50} suffix="K+" /></h3>
             <p className="mt-2 text-sm text-gray-400">Active Learners</p>
           </div>
