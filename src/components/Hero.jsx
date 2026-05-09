@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CountUp from "./Countup";
+import CountUp from "./CountUp";
 import FloatingLines from "./FloatingLines";
 
 const Hero = () => {
