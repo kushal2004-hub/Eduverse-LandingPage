@@ -63,4 +63,4 @@ Image Delivery Optimization: Overcame third-party hotlink protection (Wikimedia)
 ## 👨‍💻 Author
 Kushal Gowda H M
 
-GitHub: @kushal2004-hub
+GitHub: @kushal2004-hub (https://github.com/kushal2004-hub)
