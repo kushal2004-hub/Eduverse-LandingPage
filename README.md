@@ -1,61 +1,55 @@
-# React + Vite Project – Setup & Run Guide
+Markdown
+# 🎓 Eduverse - Modern Education Landing Page
 
-This project is built using React and Vite.
+> A sleek, highly responsive landing page for a premium online education platform, built with React and Tailwind CSS v4.
 
-Follow the steps below to run this project on your local system.
+**🔗 [View Live Demo](https://eduverse-kushal.vercel.app/)** *(Update this link to your actual clean Vercel URL!)*
 
+## 🚀 Overview
 
-## Prerequisites
+Eduverse is a frontend project designed to showcase modern web development practices. It features a dark-mode-first aesthetic, complex CSS animations, and a fully responsive layout that looks great on everything from ultra-wide monitors to mobile devices. 
 
-Make sure you have the following installed:
+## ✨ Key Features
 
-- Node.js (v18 or later recommended)
-  Download from: https://nodejs.org/
+* **Modern UI/UX:** Clean, gradient-driven dark theme with accessible contrast ratios.
+* **Infinite Marquee Animation:** Custom-built infinite scrolling partner logos using optimized vanilla CSS keyframes to ensure smooth, hardware-accelerated rendering.
+* **Fully Responsive:** Fluid layouts built with Tailwind utility classes to adapt seamlessly to all screen sizes.
+* **Optimized Assets:** Uses direct SVG paths and local public folder hosting to prevent hotlink blocking and ensure lightning-fast load times.
 
-Check installation:
+## 🛠️ Tech Stack
 
-node -v
-npm -v
+* **Framework:** React.js powered by Vite for blazing-fast Hot Module Replacement (HMR).
+* **Styling:** Tailwind CSS (v4) for utility-first styling and theme management.
+* **Deployment:** Vercel (Continuous Integration / Continuous Deployment).
+* **Version Control:** Git & GitHub.
 
+## ⚙️ Running Locally
 
-## Step 1: Clone the Repository
+Want to explore the code? Here is how to get it running on your local machine:
 
-Clone this project to your system:
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/kushal2004-hub/Eduverse-LandingPage.git](https://github.com/kushal2004-hub/Eduverse-LandingPage.git)
+Navigate into the project directory:
 
-git clone <repository-url>
+Bash
+cd Eduverse-LandingPage
+Install the dependencies:
 
-Go to the project folder:
-
-cd <project-folder-name>
-
-
-## Step 2: Install Dependencies
-
-Install all required packages:
-
+Bash
 npm install
-
-
-## Step 3: Run the Project
-
 Start the development server:
 
+Bash
 npm run dev
+🧠 Technical Learnings & Challenges
+Vite + Vercel Deployment: Successfully configured Vercel build overrides to handle cross-platform (Windows to Linux) node_module permission discrepancies.
 
+Tailwind v4 Migration: Upgraded the PostCSS configuration and shifted from tailwind.config.js to the new @theme CSS directive to leverage Tailwind's newest rendering engine.
 
-## Step 4: Open in Browser
+Image Delivery Optimization: Overcame third-party hotlink protection (Wikimedia) by auditing image paths and migrating to localized hosting and raw .svg rendering for guaranteed production stability.
 
-After running the command, open your browser and go to:
+👨‍💻 Author
+Kushal Gowda H M
 
-http://localhost:5173
-
-Your project will now run locally.
-
-
-## Stop the Server
-
-To stop the server, press:
-
-Ctrl + C
-
-in the terminal.
+GitHub: @kushal2004-hub
