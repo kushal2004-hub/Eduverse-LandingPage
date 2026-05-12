@@ -1,8 +1,23 @@
 @import "tailwindcss";
 
-/* Rest of your custom CSS below... */
+/* Bulletproof Vanilla CSS Animation 
+  Vercel cannot strip this out!
+*/
+.my-scrolling-track {
+  animation: scroll-the-logos 20s linear infinite;
+}
+
+@keyframes scroll-the-logos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Shifts exactly half the track to create the infinite loop */
+    transform: translateX(-50%); 
+  }
+}
+
 body {
   background-color: #050505;
   color: white;
-  /* ... */
 }

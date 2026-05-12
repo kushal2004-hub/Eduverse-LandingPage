@@ -44,9 +44,9 @@ const Partners = () => {
         <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#050505] to-transparent z-10"></div>
 
         {/* The Scrolling Track */}
-        <div className="flex animate-scroll-slow gap-20 w-max group-hover:[animation-play-state:paused] items-center">
-          
-          {/* Original Set */}
+        <div className="flex my-scrolling-track gap-20 w-max hover:[animation-play-state:paused] items-center">          
+        
+        {/* Original Set */}
           {partners.map((partner, index) => (
             <img 
               key={`orig-${index}`}
